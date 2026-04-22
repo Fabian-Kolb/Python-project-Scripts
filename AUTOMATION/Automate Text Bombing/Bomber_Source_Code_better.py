@@ -56,7 +56,7 @@ def sichere_abfrage (text, datentyp, bedingung = None):
 
 try:
 
-    T = sichere_abfrage("How many seconds do you want to wait before sending each message?\nEnter 0 for the quickest sending!\n", float, lambda x: x>0) # Desired Time before sending each messages
+    T = sichere_abfrage("How many seconds do you want to wait before sending each message?\nEnter 0.1 for the quickest sending!\n", float, lambda x: x>0) # Desired Time before sending each messages
     text = input("Type the message you want to send as text BOMBING! :  \n") # Desired Text
     printing = sichere_abfrage("How many times do you want to send the message?\n", int, lambda x: x>0) # How many messages the user want to send
     counter_switch = str(input("Do you want to use the counter? (y/n)\n")).lower() # Counter switch to decide whether to include the counter in the message or not
